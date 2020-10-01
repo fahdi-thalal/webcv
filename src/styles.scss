@@ -1,0 +1,300 @@
+h1 {
+	background-color: #204051; /* #3f729b */
+	color :#e4e3e3;
+	border: 2px #e4e3e3;
+	width: 100%;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+h2, h3, li{ color: #e4e3e3; }
+
+h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+}
+body {
+	margin: 2em;
+}
+body, input[type="text"], button {
+	color: #333;
+	font-family: Cambria, Georgia;
+}
+/* everywhere else */
+* {
+	font-family: "Montserrat", Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body, app-root { height: 100%; margin: 0; }
+body { margin: 0;  
+	min-height: 100%;
+}
+
+html{
+	/*background-color: blue;*/
+	width: 100%;
+	display: table;
+	overflow: auto;
+}
+
+body{
+	background-color:#e4e3e3;
+	background-color:#e4f4f1;
+	display: table-cell;
+	overflow-y: auto;
+	/*
+	background-color: red;
+	opacity: 0.5;
+	 */
+}
+
+p{
+	color: #e4e3e3;
+}
+
+a{
+	color: #f07f26;
+	color: #ed982a;
+}
+a:hover{
+	font-weight: bolder;
+	color: #f07f26;
+	color: #ed982a;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+	/*	padding: 10px; */
+}
+
+/* Left and right column */
+.column.side {
+	position: relative;
+	width: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.middle {
+	width: 40%;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #3b6978;
+	margin: 5px;
+}
+
+.middle img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.textbox
+{
+	min-height: 100%;
+	height: auto;
+	padding: 2%;
+	font-size: 1em;
+	overflow: auto;
+	scrollbar-color: #ed982a #204051;
+	scrollbar-width: thin;
+	max-height: 10px;
+	display: block;
+	padding-top: 7%;
+	overflow-y: scroll;
+}
+
+/* Middle column */
+.column.middle-left {
+	width: 40%;
+	border-radius: 20px;
+	margin-right: 5px;
+	background-color: red;
+}
+
+.column.middle-right{
+	width: 40%;
+	border-radius: 20px;
+	background-color: #3b6978;
+	font-size: 1em;
+	border-radius: 20px;
+	padding:2%;
+	margin-left: 5px;
+	height :80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main_content {
+	height: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 20px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	top: 40px;
+}
+
+.main_content div{
+	height: 100%;
+	text-align: justify;
+}
+
+.row
+{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@mixin v-h-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+	.column.side, .left-img, .grid, .main-img{
+		display: none;
+	}
+	.textbox{
+		justify-content: center;
+		width: 90%;
+		margin: auto;
+		padding:20px;
+	}
+	.main_content{
+		height:85%;
+	}
+}
+
+@media (max-width: 400px) {
+	.main_content{
+		height:85%;
+	}
+	/*
+	.textbox{
+		width: 90%;
+	}
+	*/
+}
+
+.navColor nav
+{
+	background-color: #204051; /* #3f729b */
+}
+
+/* width */
+.textbox::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+.textbox::-webkit-scrollbar-track {
+	background: #204051;
+}
+
+/* Handle */
+.textbox::-webkit-scrollbar-thumb {
+	background: #ed982a ;
+}
+
+/* Handle on hover */
+.textbox::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.arrow {
+	border: solid #204051;
+	border-width: 0 6px 6px 0; /* 3px default */
+	padding: 3px;
+	width: 2em;
+	height: 2em;
+	position: fixed;
+	top: 50%;
+}
+
+.left {
+	transform: rotate(135deg);
+	left: 5%;
+	-webkit-transform: rotate(135deg);
+}
+
+.right {
+	transform: rotate(-45deg);
+	right: 5%;
+	-webkit-transform: rotate(-45deg);
+}
+
+footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: #204051;
+	height:30px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+footer span{
+	color: white;
+	font-family: Blackjack;
+	font-size: max(1vw, 20px);
+	bottom: 0px;
+	margin-left: auto;
+}
+
+#project_skills
+{
+	display: flex;
+	height: auto;
+	border-bottom: 2px solid #204051;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+#project_skills div{
+	width: 50%;
+	float: left;
+}
+
+#project_skills li{
+	margin-left: 10px;
+	text-align: left;;
+}
+
+h1 i{
+	padding-right: 5px;
+}
+
+@font-face
+{
+	font-family: 'Blackjack';
+	src: url('/assets/font/blackjack.otf');
+}
+
+/*
+.main_content div:after {
+content: "";
+display: inline-block;
+width: 100%;
+}
+ */

@@ -1,0 +1,58 @@
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<div class="row">
+	<div class="column side">
+		<a routerLink='/formation'><i class="arrow left"></i></a>
+	</div>
+	<div class="column middle grid">
+		<div class="projets_container">
+			<a routerLink='42sh'> <div class="projets" routerLinkActive="active">42sh</div></a>
+		</div>
+		<div class="projets_short" ><a routerLink='42sh'routerLinkActive="active"><i class='{{ icon42 }}'></i></a></div>
+		<div class="projets_container">
+			<a routerLink='ft_ls'><div class="projets" routerLinkActive="active">Ft_ls</div> </a>
+		</div>
+		<div class="projets_short"><a routerLink='ft_ls' routerLinkActive="active"><i class='{{ iconLs }}'></i></a></div>
+		<div class="projets_container">
+			<a routerLink='ft_printf'><div class="projets" routerLinkActive="active">Ft_printf</div> </a>
+		</div>
+		<div class="projets_short"><a routerLink='ft_printf' routerLinkActive="active"><i class='{{ iconPrintf }}'></i></a></div>
+		<div class="projets_container">
+			<a routerLink='roger_skyline'><div class="projets" routerLinkActive="active">Roger Skyline</div></a>
+		</div>
+		<div class="projets_short"><a routerLink='roger_skyline' routerLinkActive="active"><i class='{{ iconRoger }}'></i></a></div>
+		<div class="projets_container">
+			<a routerLink='fillit'><div class="projets" routerLinkActive="active">Fillit</div></a>
+		</div>
+		<div class="projets_short" ><a routerLink='fillit' routerLinkActive="active">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+																																	  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class='fillit_logo'>
+					<g>
+				<g>
+				<path d="M320.557,382.887v-95.722h-95.722v-95.722h-95.722V95.722H0V512h416.278V382.887H320.557z M95.722,478.609h-62.33v-62.33
+						 h62.33V478.609z M95.722,382.887h-62.33v-62.33h62.33V382.887z M95.722,287.165h-62.33v-62.33h62.33V287.165z M95.722,191.443
+						 h-62.33v-62.33h62.33V191.443z M191.443,478.609h-62.33v-62.33h62.33V478.609z M191.443,382.887h-62.33v-62.33h62.33V382.887z
+						 M191.443,287.165h-62.33v-62.33h62.33V287.165z M287.165,478.609h-62.33v-62.33h62.33V478.609z M287.165,382.887h-62.33v-62.33
+						 h62.33V382.887z M382.887,478.609h-62.33v-62.33h62.33V478.609z"/>
+				</g>
+					</g>
+					<g>
+					<g>
+					<path d="M416.278,95.722V0H287.165v224.835h95.722v95.722H512V95.722H416.278z M382.887,191.443h-62.33v-62.33h62.33V191.443z
+							 M382.887,95.722h-62.33v-62.33h62.33V95.722z M478.609,287.165h-62.33v-62.33h62.33V287.165z M478.609,191.443h-62.33v-62.33
+							 h62.33V191.443z"/>
+					</g>
+					</g>
+				</svg>
+			</a></div>
+			<div class="projets_container">
+				<a routerLink='libft'><div class="projets" routerLinkActive="active">Libft</div></a>
+			</div>
+			<div class="projets_short"><a routerLink='libft' routerLinkActive="active"><i class='{{ iconLibft }}'></i></a></div>
+	</div>
+	<div class='column middle textbox project_content'>
+		<router-outlet></router-outlet>
+	</div>
+	<div class="column side">
+	</div>
+</div>

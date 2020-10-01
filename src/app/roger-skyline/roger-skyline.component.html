@@ -1,0 +1,27 @@
+<h1> <i class='{{ icon }}'></i>{{ title }} </h1>
+<h2>Compétences</h2>
+<div id="project_skills">
+	<div>
+		<li>Administration système & réseau </li>
+		<li>Unix</li>
+	</div>
+	<div>
+		<li>Technology integration </li>
+		<li>Network & system administration </li>
+	</div>
+</div>
+<p>
+Grand frère du projet Init qui introduisait les bases de l'administrations systèmes et réseau, ce projet consiste à installer, configurer et sécuriser un serveur Web sur une machine virtuelle.
+</p>
+<p>
+Le choix de la distribution GNU/linux est laissée libre. J'ai donc choisi Debian, idéale pour un serveur en raison de sa stabilité et de son cycle de développement, virtualisée à l'aide de VirtualBox.
+</p>
+<p>
+Le serveur doit être configuré sans l'aide de DHCP.
+Il doit autoriser les connexion SSH uniquement par clé publique.
+</p>
+<p>
+Pour la sécurité j'ai défini des règles iptables qui sont chargées avant l'activation de la carte réseau. Tous les ports sont fermés exceptés ceux des services utilisés.
+Une protection contre les attaques DoS est assurée en pre-routing.
+La protection contre les scans de port est géré par le logiciel PortSentry et la gestion des utilisateurs bannis par Fail2Ban.
+</p>
