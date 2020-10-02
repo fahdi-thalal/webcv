@@ -28,7 +28,6 @@ export const SlideInAnimation =
 					animate('300ms ease-out', style({ left: '0%' }))
 				])
 			]),
-			query(':enter', animateChild()),
 		]),
 		/*
 	transition('* <=> Formation', [
